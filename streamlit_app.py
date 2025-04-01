@@ -17,10 +17,10 @@ if not openai_api_key:
 else:
 
     # Create an OpenAI client.
-client = OpenAI(
-    api_key="sk-or-vv-a8d6e009e2bbe09474b0679fbba83b015ff1c4f255ed76f33b48ccb1632bdc32",
-    base_url="https://api.vsegpt.ru/v1/chat/completions",  # кастомный эндпоинт
-)
+    client = OpenAI(
+        api_key="sk-or-vv-a8d6e009e2bbe09474b0679fbba83b015ff1c4f255ed76f33b48ccb1632bdc32",
+        base_url="https://api.vsegpt.ru/v1/chat/completions",  # кастомный эндпоинт
+    )
 
     # Let the user upload a file via `st.file_uploader`.
     uploaded_file = st.file_uploader(
